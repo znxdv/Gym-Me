@@ -1,0 +1,117 @@
+﻿body {
+    background-color: #F8F4E1;
+}
+
+.Register-Page-Container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Register-Page-Content {
+    height: 80%;
+    width: 30%;
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #F1F1F1;
+    border-radius: 10px;
+    background-color: #AF8F6F;
+    color: white;
+}
+
+.Register-Page-Title {
+    padding-bottom: 1rem;
+}
+
+.Register-Title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.Register-Input-Txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0.5em 0;
+}
+
+.Register-Input-DOB {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5em 0;
+    gap: 3px;
+}
+
+#Txt_Username, #Txt_Email, #Txt_Password, #Txt_Confirm_Password, #Txt_DD, #Txt_MM, #Txt_YY {
+    height: 4vh;
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin-top: 2px;
+}
+
+#Txt_DD, #Txt_MM, #Txt_YY {
+    width: 25px;
+}
+
+.Register-Input-Remember {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em 0;
+}
+
+.Register-Input {
+    margin: 0.5em 0;
+}
+
+.Register-Input-Button {
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+#Btn_Register {
+    height: 4vh;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #74512D;
+    color: #F8F4E1;
+    border: 2px solid #74512D;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    #Btn_Register:hover {
+        background-color: #543310;
+        color: #F8F4E1;
+    }
+
+.Register-To-Login {
+    margin: 0.5em 0;
+}
+
+#HyperLink {
+    text-decoration: none;
+    color: #74512D;
+    font-weight: 600;
+}
+
+.Login_Error {
+    color: red;
+}
+
+.Login-Success {
+    color: green;
+}

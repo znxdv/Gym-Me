@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavBar.master.cs" Inherits="Final_Project.View.NavBar" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" runat="server" media="screen" href="~/Styles/MasterPage.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Panel ID="navbar_customer" runat="server">
+            <div class="navbar">
+                <div class="navbar-container2">
+                    <asp:Button ID="Button_Title_C" class="navbar_link" runat="server" Text="Gym Me" OnClick="Home_btn_Click" />
+                </div>
+                <div class="navbar-container1">
+                    <asp:Button ID="Button_OS" class="navbar_link" runat="server" Text="Order Supplement" OnClick="Order_btn_Click" />
+                    <asp:Button ID="Button_History_C" class="navbar_link" runat="server" Text="History" OnClick="History_btn_Click" />
+                </div>
+                <div class="navbar-container3">
+                    <asp:Button ID="Button_Profile_C" class="navbar_link" runat="server" Text="Profile" OnClick="Profile_btn_Click" />
+                    <asp:Button ID="Button_Logout_C" class="navbar_link" runat="server" Text="Logout" OnClick="Logout_btn_Click" />
+                </div>
+            </div>
+        </asp:Panel>
+
+        <asp:Panel ID="navbar_admin" runat="server">
+            <div class="navbar">
+                <div class="navbar-container2">
+                    <asp:Button ID="Button_Title" class="navbar_link" runat="server" Text="Gym Me" OnClick="Home_btn_Click" />
+                </div>
+                <div class="navbar-container1">
+                    <asp:Button ID="Button_MS" class="navbar_link" runat="server" Text="Manage Supplement" OnClick="Manage_btn_Click" />
+                    <asp:Button ID="Button_OQ" class="navbar_link" runat="server" Text="Order Queue" OnClick="Queue_btn_Click" />
+                    <asp:Button ID="Button_History" class="navbar_link" runat="server" Text="History" OnClick="History_btn_Click" />
+                    <asp:Button ID="Button_Report" class="navbar_link" runat="server" Text="Report" OnClick="Button_Report_Click" />
+                </div>
+                <div class="navbar-container3">
+                    <asp:Button ID="Button_Profile" class="navbar_link" runat="server" Text="Profile" OnClick="Profile_btn_Click" />
+                    <asp:Button ID="Button_LogOut" class="navbar_link" runat="server" Text="Logout" OnClick="Logout_btn_Click" />
+                </div>
+            </div>
+        </asp:Panel>
+        <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
